@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LACAK | Sistem Lost & Found Terintegrasi</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">LACAK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link px-3" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#">Tentang</a></li>
+          <li class="nav-item ms-lg-3">
+            <li class="nav-item ms-lg-3">
+  <a class="btn btn-outline-light px-4 rounded-pill" href="chat.html">Bantuan Chat</a>
+</li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309" class="d-block w-100 hero-img" alt="Layanan LACAK">
+        <div class="carousel-caption">
+          <span class="badge bg-success mb-3 px-3 py-2">Layanan Cepat</span>
+          <h1 class="display-6 fw-bold mb-3">Aksi LACAK</h1>
+          <p class="lead mb-4 d-none d-md-block">Kelola barang temuan dan kehilangan dengan sistem yang terintegrasi, transparan, dan aman di SMK TI BAZMA.</p>
+          <a href="#" class="btn btn-success btn-lg px-4 py-2 rounded-3">Mulai Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5 py-5">
+    <div class="text-center mb-5">
+      <h6 class="text-success fw-bold text-uppercase">Layanan Kami</h6>
+      <h2 class="fw-bold display-6">Program Utama</h2>
+    </div>
+
+    <div class="row g-4 d-none d-md-flex">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1595079676339-1534801ad6cf" class="card-img-top" alt="Taruh Barang">
+          <div class="card-body p-4 d-flex flex-column">
+            <h4 class="fw-bold">Taruh Barang</h4>
+            <p class="text-muted flex-grow-1 small">Scan sidik jari penemu, input data barang temuan baru, dan cetak barcode.</p>
+            <button class="btn btn-akbar w-100 mt-3">Mulai Input</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62" class="card-img-top" alt="Ambil Barang">
+          <div class="card-body p-4 d-flex flex-column">
+            <h4 class="fw-bold">Ambil Barang</h4>
+            <p class="text-muted flex-grow-1 small">Scan barcode barang dan verifikasi sidik jari pengambil untuk proses serah terima.</p>
+            <button class="btn btn-akbar w-100 mt-3">Proses Pengambilan</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85" class="card-img-top" alt="Laporan Kehilangan">
+          <div class="card-body p-4 d-flex flex-column">
+            <h4 class="fw-bold">Laporan Kehilangan</h4>
+            <p class="text-muted flex-grow-1 small">Bantu siswa mencatat detail barang yang hilang agar sistem dapat mencari kecocokan.</p>
+            <button class="btn btn-akbar w-100 mt-3">Buat Laporan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="programCarouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#programCarouselMobile" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#programCarouselMobile" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#programCarouselMobile" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card mx-2">
+            <img src="https://images.unsplash.com/photo-1595079676339-1534801ad6cf" class="card-img-top" alt="Taruh Barang">
+            <div class="card-body p-4 text-center">
+              <h4 class="fw-bold">Taruh Barang</h4>
+              <p class="text-muted small">Scan sidik jari penemu, input data barang temuan baru, dan cetak barcode.</p>
+              <button class="btn btn-akbar w-100">Mulai Input</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card mx-2">
+            <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62" class="card-img-top" alt="Ambil Barang">
+            <div class="card-body p-4 text-center">
+              <h4 class="fw-bold">Ambil Barang</h4>
+              <p class="text-muted small">Scan barcode barang dan verifikasi sidik jari pengambil untuk proses serah terima.</p>
+              <button class="btn btn-akbar w-100">Proses Pengambilan</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card mx-2">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85" class="card-img-top" alt="Laporan Kehilangan">
+            <div class="card-body p-4 text-center">
+              <h4 class="fw-bold">Laporan Kehilangan</h4>
+              <p class="text-muted small">Bantu siswa mencatat detail barang yang hilang agar sistem dapat mencari kecocokan.</p>
+              <button class="btn btn-akbar w-100">Buat Laporan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#programCarouselMobile" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true" style="width: 25px; height: 25px;"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#programCarouselMobile" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true" style="width: 25px; height: 25px;"></span>
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container text-center">
+      <h3 class="fw-bold mb-4">LACAK</h3>
+      <p class="text-white-50 mx-auto" style="max-width: 500px;">
+        Mengelola barang temuan dan kehilangan dengan sistem yang terintegrasi, transparan, dan aman di SMK TI BAZMA.
+      </p>
+      <div class="footer-divider"></div>
+      <p class="small text-white-50 mb-0">© 2026 LACAK oleh Nafis & Akbar. Seluruh Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
